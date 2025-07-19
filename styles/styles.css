@@ -74,20 +74,38 @@ nav {
     font-size: 1rem;
     color: var(--primary-color);
 }
-
+nav .fa, nav .faa{
+    display: none;
+}
 /* --navber Media query */
 @media screen and (max-width: 576px) {
     body {
         padding: 8px 10pxs;
     }
-
+    .nav-links{
+        width: 150px;
+        background-color: tomato;
+        position: absolute;
+        
+        top: 0;
+        right: -200;
+        height: 100vh;
+    }
     nav {
         align-items: center;
         justify-content: center;
         padding: 15px;
-        flex-direction: column;
+        
     }
-
+    nav .fa{
+        display: block;
+        margin: 20px;
+        font-size: 2rem;
+    }
+    nav .faa{
+        display: block;
+        margin: 0 30px;
+    }
     .nav-logo h1 {
         font-size: 1rem;
         padding: 0;
@@ -234,4 +252,59 @@ nav {
    .collec-cards{
     grid-template-columns: repeat(1, 1fr);
    } 
+}
+
+/* ---featured part  */
+.featured-part{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.f-parts{
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between
+}
+.f-imgpart{
+    width: 400px;
+}
+.f-textpart{
+    width: 600px
+}
+
+@media screen and (max-width: 576px) {
+    .f-parts{
+        flex-direction: column-reverse;
+    }
+    .f-imgpart{
+        width: 300px;
+    }
+    .f-imgpart img{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .f-textpart button{
+        margin: 20px auto;
+    }
+    .f-textpart{
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+        margin-bottom: 30px;
+        padding: 5px 10px;
+    }
+
+}
+/* ---footer  */
+footer{
+    background-color: rgb(42, 35, 35);
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footer-parts{
+    padding: 60px 60px;
+    color: rgb(185, 159, 159);
 }

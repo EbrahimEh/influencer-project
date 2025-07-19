@@ -18,7 +18,8 @@
                 <h1>Influencer products</h1>
             </div>
 
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa fa-xmark" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Products</a></li>
@@ -30,6 +31,7 @@
                     </div>
                 </ul>
             </div>
+            <i class="fa-solid faa fa-bars" onclick="showmenu()"></i>
         </nav>
 
         <!-- --hero section  -->
@@ -215,11 +217,49 @@
                 </div>
                 <div class="see-more"><a href="#">See More <i class="fa-solid fa-arrow-right"></i></a></div>
             </section>
+
+            <section class="featured-part">
+                <div class="f-parts">
+                    <div class="f-imgpart"><img src="images/gear.png" alt=""></div>
+
+                    <div class="f-textpart">
+                        <h2 ss="f-title">Featured products at one place</h2>
+                        <p class="subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+
+                        <button class="btn-primary">Join Now!</button>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 
 
-    <footer></footer>
+    <footer>
+        <div class="footer-parts">
+            <h3 class="footer-title">Influencer products</h3>
+            <p class="subtitle">Copyright © 2025  influencer products</p>
+            <p class="subtitle">All rights reserved</p>
+            <div class="f-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ---using javascript -->
+     <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showmenu(){
+            navLinks.style.right = "0";
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+     </script>
 </body>
 
 </html>
